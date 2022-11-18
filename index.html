@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
+    
     <link rel="stylesheet" href="main.css">
     <head>
       <title>PageCuaPhu...</title>
       <meta charset="utf-8"> 
        <style>
+        .tab
+        {
+            width: 93vw;
+            height: 50px;
+            
+            border-bottom: 5px solid black;
+            margin-bottom: -30px;
+            
+
+        }
+        .outline
+        {
+           
+           border: 5px solid black ;
+           border-width: 10px;
+           content: 100px white ;
+           border-top-left-radius: 2vw;
+           border-top-right-radius: 2vw;
+           
+           border-bottom-width: 0px;
+           padding-bottom: 20px;
+           
+        }
+        .item
+        {
+            width: 100px;
+            height: 50px;
+            border-left: 100vh black;
+            border: 5px solid black;
+            border-bottom-width: 0;
+            margin-bottom: -5px;
+            background: white;
+            border-top-left-radius: 2vw;
+            border-top-right-radius: 2vw;
+
+        }
         .button
         {
             
@@ -17,25 +54,27 @@
         }
         .box2
         {
-            width: 100vw;
-            height: 190px;
-            
-            background-size: cover ;
-            background-origin: content-box;
+            width: 92vw;
+            height: 190px;           
             background-image: url(https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
             background-repeat:no-repeat;
-            padding: 10px;
-            margin-top:   30px ;
-            margin-right: 100px;
+            background-clip: content-box;
+            padding: 10px;         
+            margin-top: 30px ;
+            margin-right: -10px;
 
             
         }
         .box3
         {
-            width: 100vw;
+            width:94.5vw;
             height: 100vh;
             background-image: linear-gradient(0,grey,white);
 
+        }
+        h1:hover
+        {
+            color:brown
         }
        </style>
       
@@ -43,39 +82,41 @@
     <script type='text/javascript'> ! function (e, t, a) { function n()
          { c( ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
     <body>
-        <audio src="nhac.mp3" type="audio/mp3" >
+        <div class="outline">
+            <audio src="nhac.mp3" type="audio/mp3" >          
+            </audio>       
+            <div class="tab">
+                <div class="item">
+                    
+                </div>
+             </div>
+            <div class="box2"></div>
             
-        </audio>
-        <div class="box2"></div>
-        <h1 style="text-align:center">
-            “A flower cannot blossom without sunshine, and a man cannot live without love.” – ...
-            
-        </h1>
-        <h2 style="text-align:center ;">......</h2>
-        <p style="text-align:center ;">My Favourite Flower
-            My favourite flower is rose. I like other flowers too but I find the rose to be the most beautiful among all flowers. It is also called the king of flowers. They come in many colours so it offers great variety.
-            
-            For instance, they are available in red, pink, white, yellow, blue and more. My favourite is the white rose. Even though the rose has small and sharp thorns on its stem, people love picking roses.
-            
-            It looks beautiful when it blooms in the garden or is kept at the florist’s shop. Often we see the rose as a symbol of beauty and love. The rose has soft petals and a very sweet fragrance. It comes in use in many ceremonies for decorations purposes.
-            
-            Moreover, garlands of roses are used in places of worship. Similarly, it is a great flower which always stands out from the rest of the flowers. I have planted roses in my garden as well with the help of my grandfather.</p>
-            <ul>
-                <li>Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a></li>  
-                <li>Hoa Delphis: <a href="https://i.pinimg.com/564x/42/ba/85/42ba85aa4324772cbb954151dda84566.jpg">Nhấp vào xem hoa Delphis.</a></li>
-                <li>Hoa Carnation: <a href="https://i.pinimg.com/564x/33/3c/fa/333cfaa6da3b75215d503a83a4c03215.jpg"> Nhấp vào xem hoa Carnation.</a></li>
-                <li>Hoa Anh Đào: <a href="https://i.pinimg.com/564x/e5/30/5b/e5305be343a497124a338e007f9ac439.jpg">Nhấp vào xem hoa Anh Đào.</a></li>
-                <li>Hoa Hồng Trắng: <a href="https://i.pinimg.com/564x/b1/14/7b/b1147b876b6d47bc5cfa3fed6a542f40.jpg">Nhấp vào xem hoa Hồng Trắng.</a></li>
-                <li>Hoa Cúc: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-cuc.jpg">Nhấp vào xem hoa Hoa Cúc.</a></li>
-                <li>Hoa Thược Dược: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-thuoc-duoc.jpg">Nhấp vào xem hoa Thược Dược.</a></li>
-                <li>Hoa Tulip: <a href="https://i.pinimg.com/564x/a2/45/9d/a2459dfb168a09e1484fd79587c49859.jpg">Nhấp vào xem hoa Tulip.</a></li>
-                <li>Hoa Trái Tim Rỉ Máu: <a href="https://giaitri.vn/wp-content/uploads/2019/12/10-loai-hoa-dep-nhat-the-gioi-loai-thu-6-o-viet-nam-moc-day-nha-nao-cung-co-5-1559027405-938-width600height313.jpg">Nhấp vào xem Hoa trái tim rỉ máu.</a></li>
-                <li>Hoa Phi Yến: <a href="https://i.pinimg.com/564x/45/cf/34/45cf34472907d7e0ad1c6c4826a5af8c.jpg">Nhấp vào xem hoa Phi Yến.</a></li>
-                <li>Hoa Anh Thảo: <a href="https://i.pinimg.com/564x/9c/aa/89/9caa89eccb4b806ca4507525372ac19b.jpg">Nhấp vào xem hoa Anh Thảo.</a></li>
-                <li>Hoa Tulip Đỏ: <a href="https://i.pinimg.com/564x/f8/8b/95/f88b958aceb26adbbd8a3062a05019f5.jpg">Nhấp vào xem hoa Tulip Đỏ.</a></li>
-            </ul>
-            <button  class="button">Click chuột vào vị trí bất kì để thích...</button>
-            <div class="box3"></div>
+            <h1 style="text-align:center">
+                “A flower cannot blossom without sunshine, and a man cannot live without love.” – ...
+                
+            </h1>
+            <h2 style="text-align:center ;">......</h2>
+            <p style="text-align:center ;">Hoa yêu thích của tôi. Loài hoa yêu thích của tôi là hoa hồng. Tôi cũng thích những bông hoa khác nhưng tôi thấy hoa hồng là đẹp nhất trong tất cả các loài hoa. Nó còn được mệnh danh là vua của các loài hoa. Chúng có nhiều màu sắc nên nó mang đến sự đa dạng tuyệt vời. Chẳng hạn, chúng có các màu như đỏ, hồng, trắng, vàng, xanh lam, v.v. Tôi yêu thích nhất là hoa hồng trắng. Mặc dù hoa hồng có gai nhỏ và sắc nhọn trên thân nhưng mọi người vẫn thích hái hoa hồng. Nó trông thật đẹp khi nở trong vườn hoặc được giữ ở cửa hàng bán hoa. Chúng ta thường xem hoa hồng là biểu tượng của sắc đẹp và tình yêu. Hoa hồng có cánh hoa mềm mại và hương thơm rất ngọt ngào. Nó được sử dụng trong nhiều nghi lễ với mục đích trang trí. Hơn nữa, những vòng hoa hồng được sử dụng ở những nơi thờ cúng. Tương tự như vậy, nó là một bông hoa tuyệt vời luôn nổi bật so với những bông hoa còn lại.</p>
+                <ul>
+                    <li>Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a></li>  
+                    <li>Hoa Delphis: <a href="https://i.pinimg.com/564x/42/ba/85/42ba85aa4324772cbb954151dda84566.jpg">Nhấp vào xem hoa Delphis.</a></li>
+                    <li>Hoa Carnation: <a href="https://i.pinimg.com/564x/33/3c/fa/333cfaa6da3b75215d503a83a4c03215.jpg"> Nhấp vào xem hoa Carnation.</a></li>
+                    <li>Hoa Anh Đào: <a href="https://i.pinimg.com/564x/e5/30/5b/e5305be343a497124a338e007f9ac439.jpg">Nhấp vào xem hoa Anh Đào.</a></li>
+                    <li>Hoa Hồng Trắng: <a href="https://i.pinimg.com/564x/b1/14/7b/b1147b876b6d47bc5cfa3fed6a542f40.jpg">Nhấp vào xem hoa Hồng Trắng.</a></li>
+                    <li>Hoa Cúc: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-cuc.jpg">Nhấp vào xem hoa Hoa Cúc.</a></li>
+                    <li>Hoa Thược Dược: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-thuoc-duoc.jpg">Nhấp vào xem hoa Thược Dược.</a></li>
+                    <li>Hoa Tulip: <a href="https://i.pinimg.com/564x/a2/45/9d/a2459dfb168a09e1484fd79587c49859.jpg">Nhấp vào xem hoa Tulip.</a></li>
+                    <li>Hoa Trái Tim Rỉ Máu: <a href="https://giaitri.vn/wp-content/uploads/2019/12/10-loai-hoa-dep-nhat-the-gioi-loai-thu-6-o-viet-nam-moc-day-nha-nao-cung-co-5-1559027405-938-width600height313.jpg">Nhấp vào xem Hoa trái tim rỉ máu.</a></li>
+                    <li>Hoa Phi Yến: <a href="https://i.pinimg.com/564x/45/cf/34/45cf34472907d7e0ad1c6c4826a5af8c.jpg">Nhấp vào xem hoa Phi Yến.</a></li>
+                    <li>Hoa Anh Thảo: <a href="https://i.pinimg.com/564x/9c/aa/89/9caa89eccb4b806ca4507525372ac19b.jpg">Nhấp vào xem hoa Anh Thảo.</a></li>
+                    <li>Hoa Tulip Đỏ: <a href="https://i.pinimg.com/564x/f8/8b/95/f88b958aceb26adbbd8a3062a05019f5.jpg">Nhấp vào xem hoa Tulip Đỏ.</a></li>
+                </ul>
+                <button  class="button">Click chuột vào vị trí bất kì để thích...</button>
+                <div class="box3"></div>
+        </div>
+        
        
     </body>
+    
 </html>
