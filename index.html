@@ -45,8 +45,8 @@
         .button
         {
             
-            width: 80vw;
-            height: 50px;
+            width: 30vw;
+            height: 30px;
             padding: 10px ;
             margin:  1vw 10vh;
             
@@ -54,7 +54,7 @@
         }
         .box2
         {
-            width: 92vw;
+            width: 95vw;
             height: 190px;           
             background-image: url(https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
             background-repeat:no-repeat;
@@ -67,9 +67,21 @@
 
             
         }
+        .box2:hover
+        {
+            width: 95vw;
+            height: 190px;           
+            background-image: url(https://i.pinimg.com/564x/02/c4/ba/02c4ba5ba88c900f99a3859c44661a67.jpg);
+            background-repeat:no-repeat;
+            background-origin: content-box;
+            background-size: cover;
+            background-position: center;
+            padding: 10px;         
+            margin-top: 30px ;  
+        }
         .box3
         {
-            width:94.5vw;
+            width:95.5vw;
             height: 100vh;
             background-image: linear-gradient(0,grey,white);
 
@@ -77,6 +89,16 @@
         h1:hover
         {
             color:brown
+        }
+        h1::selection
+        {
+           color: cadetblue;
+        }
+        button:hover
+        {
+            
+            position: relative;
+            left: 500px;
         }
        </style>
       
@@ -87,11 +109,7 @@
         <div class="outline">
             <audio src="nhac.mp3" type="audio/mp3" >          
             </audio>       
-            <div class="tab">
-                <div class="item">
-                    
-                </div>
-             </div>
+            
             <div class="box2"></div>
             
             <h1 style="text-align:center">
@@ -99,7 +117,10 @@
                 
             </h1>
             <h2 style="text-align:center ;">......</h2>
-            <p style="text-align:center ;">Hoa yêu thích của tôi. Loài hoa yêu thích của tôi là hoa hồng. Tôi cũng thích những bông hoa khác nhưng tôi thấy hoa hồng là đẹp nhất trong tất cả các loài hoa. Nó còn được mệnh danh là vua của các loài hoa. Chúng có nhiều màu sắc nên nó mang đến sự đa dạng tuyệt vời. Chẳng hạn, chúng có các màu như đỏ, hồng, trắng, vàng, xanh lam, v.v. Tôi yêu thích nhất là hoa hồng trắng. Mặc dù hoa hồng có gai nhỏ và sắc nhọn trên thân nhưng mọi người vẫn thích hái hoa hồng. Nó trông thật đẹp khi nở trong vườn hoặc được giữ ở cửa hàng bán hoa. Chúng ta thường xem hoa hồng là biểu tượng của sắc đẹp và tình yêu. Hoa hồng có cánh hoa mềm mại và hương thơm rất ngọt ngào. Nó được sử dụng trong nhiều nghi lễ với mục đích trang trí. Hơn nữa, những vòng hoa hồng được sử dụng ở những nơi thờ cúng. Tương tự như vậy, nó là một bông hoa tuyệt vời luôn nổi bật so với những bông hoa còn lại.</p>
+            <p style="text-align:center ;">Fun facts about tulips!
+                The most known meaning of tulips is perfect and deep love. As tulips are a classic flower that has been loved by many for centuries they have been attached with the meaning of love. They're ideal to give to someone who you have a deep, unconditional love for, whether it's your partner, children, parents or siblings.
+                
+                </p>
                 <ul>
                     <li>Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a></li>  
                     <li>Hoa Delphis: <a href="https://i.pinimg.com/564x/42/ba/85/42ba85aa4324772cbb954151dda84566.jpg">Nhấp vào xem hoa Delphis.</a></li>
@@ -114,7 +135,7 @@
                     <li>Hoa Anh Thảo: <a href="https://i.pinimg.com/564x/9c/aa/89/9caa89eccb4b806ca4507525372ac19b.jpg">Nhấp vào xem hoa Anh Thảo.</a></li>
                     <li>Hoa Tulip Đỏ: <a href="https://i.pinimg.com/564x/f8/8b/95/f88b958aceb26adbbd8a3062a05019f5.jpg">Nhấp vào xem hoa Tulip Đỏ.</a></li>
                 </ul>
-                <button  class="button">Click chuột vào vị trí bất kì để thích...</button>
+                <button  class="button" >Click chuột vào vị trí bất kì để thích...</button>
                 <div class="box3"></div>
         </div>
         
