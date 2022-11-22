@@ -234,6 +234,58 @@
 
             
         }
+        .boxchuaboxhoa
+        {
+            width: 95vw;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .boxani
+        {
+          width: 50em;
+          height: 250px;  
+          background-color:white;
+        }
+        .boxmove
+        {
+
+            width: 50px;
+            height: 50px;
+            animation:dich_chuyen 15s infinite;
+            position: relative;
+            background-image: url(https://i.pinimg.com/564x/11/40/ae/1140ae8029f8c538e29cc2771b873c11.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 1vw ;
+
+        }
+        .boxmove:active
+        {
+            width: 1px;
+            height: 1px;
+            animation:dich_chuyenfake 5s infinite;
+        }
+        @keyframes dich_chuyen {
+    0%   {top:0px;left:0px;background-color:red;width: 50px;height: 50px;}
+    25%  {top:100px;left:100vw:px;background-color:green;width:200px;height:200px;}
+    50%  {top:500px;left:250px;background-color:green;width:200px;height:200px;}
+    60%  {top:500px;left:500px;background-color:blue;width:50px;height:100px;width:100px;}
+    70%  {top:100px;left:250px;background-color:blue;width:50px;height:300px;width:300px;}
+    90%  {top:100px;left:0px;background-color:yellow;width:150px;height:150px;}
+    100% {top:0px;left:0px;background-color:red;width:50px;height:50px;}
+       }
+       @keyframes dich_chuyenfake {
+    0%   {right:0px;bottom:0px;background-color:red;}
+    10%  {left:300px;right:500px;background-color:green;width:150px;height:100px;}
+    25%  {left:0px;right:300px;background-color:green;width:150px;height:100px;}
+    40%  {right:300px;top:1000px;background-color:blue;width:40px;height:80px;}
+    50%  {top:0px;left:300px;background-color:green;width:150px;height:100px;}
+    60%  {top:0px;right:200px;background-color:blue;width:100px;height:80px;}
+    70%  {right:10px;top:300px;background-color:blue;width:40px;height:80px;}
+    90%  {left:250px;left:100px;background-color:yellow;width:300px;height:300px;}
+    100% {top:0px;left:50px;background-color:red;width:70px;height:100px;}
+}
 
         </style>
       
@@ -271,21 +323,30 @@
                 </p>
                     
             </div>
-                <ul>
-                    <li class="dshoa">Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a></li>  
-                    <li class="dshoa">Hoa Delphis: <a href="https://i.pinimg.com/564x/42/ba/85/42ba85aa4324772cbb954151dda84566.jpg">Nhấp vào xem hoa Delphis.</a></li>
-                    <li class="dshoa">Hoa Carnation: <a href="https://i.pinimg.com/564x/33/3c/fa/333cfaa6da3b75215d503a83a4c03215.jpg"> Nhấp vào xem hoa Carnation.</a></li>
-                    <li class="dshoa">Hoa Anh Đào: <a href="https://i.pinimg.com/564x/e5/30/5b/e5305be343a497124a338e007f9ac439.jpg">Nhấp vào xem hoa Anh Đào.</a></li>
-                    <li class="dshoa">Hoa Hồng Trắng: <a href="https://i.pinimg.com/564x/b1/14/7b/b1147b876b6d47bc5cfa3fed6a542f40.jpg">Nhấp vào xem hoa Hồng Trắng.</a></li>
-                    <li class="dshoa">Hoa Cúc: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-cuc.jpg">Nhấp vào xem hoa Hoa Cúc.</a></li>
-                    <li class="dshoa">Hoa Thược Dược: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-thuoc-duoc.jpg">Nhấp vào xem hoa Thược Dược.</a></li>
-                    <li class="dshoa">Hoa Tulip: <a href="https://i.pinimg.com/564x/a2/45/9d/a2459dfb168a09e1484fd79587c49859.jpg">Nhấp vào xem hoa Tulip.</a></li>
-                    <li class="dshoa">Hoa Trái Tim Rỉ Máu: <a href="https://giaitri.vn/wp-content/uploads/2019/12/10-loai-hoa-dep-nhat-the-gioi-loai-thu-6-o-viet-nam-moc-day-nha-nao-cung-co-5-1559027405-938-width600height313.jpg">Nhấp vào xem Hoa trái tim rỉ máu.</a></li>
-                    <li class="dshoa">Hoa Phi Yến: <a href="https://i.pinimg.com/564x/45/cf/34/45cf34472907d7e0ad1c6c4826a5af8c.jpg">Nhấp vào xem hoa Phi Yến.</a></li>
-                    <li class="dshoa">Hoa Anh Thảo: <a href="https://i.pinimg.com/564x/9c/aa/89/9caa89eccb4b806ca4507525372ac19b.jpg">Nhấp vào xem hoa Anh Thảo.</a></li>
-                    <li class="dshoa">Hoa Tulip Đỏ: <a href="https://i.pinimg.com/564x/f8/8b/95/f88b958aceb26adbbd8a3062a05019f5.jpg">Nhấp vào xem hoa Tulip Đỏ.</a></li>
-                </ul>
-                
+                <div class="boxchuaboxhoa">
+                    <div class="boxhoa">
+                        <ul>
+                            <li class="dshoa">Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a></li>  
+                            <li class="dshoa">Hoa Delphis: <a href="https://i.pinimg.com/564x/42/ba/85/42ba85aa4324772cbb954151dda84566.jpg">Nhấp vào xem hoa Delphis.</a></li>
+                            <li class="dshoa">Hoa Carnation: <a href="https://i.pinimg.com/564x/33/3c/fa/333cfaa6da3b75215d503a83a4c03215.jpg"> Nhấp vào xem hoa Carnation.</a></li>
+                            <li class="dshoa">Hoa Anh Đào: <a href="https://i.pinimg.com/564x/e5/30/5b/e5305be343a497124a338e007f9ac439.jpg">Nhấp vào xem hoa Anh Đào.</a></li>
+                            <li class="dshoa">Hoa Hồng Trắng: <a href="https://i.pinimg.com/564x/b1/14/7b/b1147b876b6d47bc5cfa3fed6a542f40.jpg">Nhấp vào xem hoa Hồng Trắng.</a></li>
+                            <li class="dshoa">Hoa Cúc: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-cuc.jpg">Nhấp vào xem hoa Hoa Cúc.</a></li>
+                            <li class="dshoa">Hoa Thược Dược: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-thuoc-duoc.jpg">Nhấp vào xem hoa Thược Dược.</a></li>
+                            <li class="dshoa">Hoa Tulip: <a href="https://i.pinimg.com/564x/a2/45/9d/a2459dfb168a09e1484fd79587c49859.jpg">Nhấp vào xem hoa Tulip.</a></li>
+                            <li class="dshoa">Hoa Trái Tim Rỉ Máu: <a href="https://giaitri.vn/wp-content/uploads/2019/12/10-loai-hoa-dep-nhat-the-gioi-loai-thu-6-o-viet-nam-moc-day-nha-nao-cung-co-5-1559027405-938-width600height313.jpg">Nhấp vào xem Hoa trái tim rỉ máu.</a></li>
+                            <li class="dshoa">Hoa Phi Yến: <a href="https://i.pinimg.com/564x/45/cf/34/45cf34472907d7e0ad1c6c4826a5af8c.jpg">Nhấp vào xem hoa Phi Yến.</a></li>
+                            <li class="dshoa">Hoa Anh Thảo: <a href="https://i.pinimg.com/564x/9c/aa/89/9caa89eccb4b806ca4507525372ac19b.jpg">Nhấp vào xem hoa Anh Thảo.</a></li>
+                            <li class="dshoa">Hoa Tulip Đỏ: <a href="https://i.pinimg.com/564x/f8/8b/95/f88b958aceb26adbbd8a3062a05019f5.jpg">Nhấp vào xem hoa Tulip Đỏ.</a></li>
+                        </ul>
+                    </div>
+                    <div class="boxani">
+                           <div class="boxmove">
+                            <h4>Bắt em bằng cách giữ chuột.</h4>
+                           </div>
+
+                    </div>
+                </div>
                 <div class="box3">
                     <div id="X1" class="iteminsidebox3" style="--percent: 75%">  </div>
                     <div id="X2" class="iteminsidebox3" style="--percent: 60%">  </div>
@@ -294,6 +355,8 @@
                     <div id="X5" class="iteminsidebox3" style="--percent: 65%">  </div>
                     <div id="X6" class="iteminsidebox3" style="--percent: 85%">  </div>
                 </div>
+                
         </div>
+       
     </body>  
 </html>
