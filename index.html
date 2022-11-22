@@ -80,11 +80,29 @@
             padding: 10px;         
             margin-top: 30px ;  
         }
+        @keyframes growth {
+    from{
+        opacity: 0;
+        height: calc(var(--percent)-50%);
+    }
+    to{
+        opacity: 1;
+        height: calc(var(--percent));
+    }
+}
         .box3
         {
-            width:95.5vw;
+            width:50vw;
             height: 100vh;
             background-image: linear-gradient(0,grey,white);
+            display: flex;
+            justify-content: space-around;
+            min-width: fit-content;
+            margin-left: 10px;
+            margin-right: 20px;
+            align-items: flex-start;
+            
+
 
         }
         h1:hover
@@ -119,6 +137,7 @@
         }
         .box4
         {
+            background-clip: padding-box;
             width: 95vw;
             height: 60px;
             background-color: papayawhip;
@@ -130,6 +149,8 @@
             margin-top: 5px;
             margin-left: 10px;
             margin-right: 20px;
+            padding-bottom: 10px;
+            
             
         }
         .insidebox4
@@ -156,28 +177,65 @@
         }
         .para
         {
-            
             display: flex;
-            justify-content: space-between;
+            margin-left: 10px;
+            margin-right: 15px;
+            background-color: cadetblue;
+            justify-content: space-around;
+           
             
-        }
-        #p1
-        {
-            flex: 1;
-        }
-        #p2
-        {
-            flex: 2;
-        }
-        #p3
-        {
-            flex: 1;
-        }
+            
+            
+        }      
         .paraitem
         {
-            flex-basis: 30%;
+          margin-left: 20px;
         }
-       </style>
+        #X1
+        {
+            background-image: url(https://i.pinimg.com/564x/c2/44/0b/c2440ba8237fccab351d708c497d4e6e.jpg);
+        }
+        #X2
+        {
+            background-image: url(https://i.pinimg.com/564x/4b/05/0a/4b050ae725e89b4965f72f3efd006b32.jpg);
+            
+        }
+        #X3
+        {
+            background-image: url(https://i.pinimg.com/564x/d9/5b/83/d95b837e4b032de12e469bbe980f4ca6.jpg);
+        }
+        #X4
+        {
+            background-image: url(https://i.pinimg.com/564x/bb/93/2b/bb932bbc882a03b42cb41d0326a8e8cb.jpg);
+        }
+        #X5
+        {
+            background-image: url(https://i.pinimg.com/564x/1d/37/0f/1d370f9c2180351cfb06964e7db29540.jpg);
+        }
+        #X6
+        {
+            background-image: url(https://i.pinimg.com/564x/0b/3f/ef/0b3fef48a33529b7f0892df36f3da4e3.jpg);
+        }
+       .iteminsidebox3:hover
+       {
+        background-position: right;
+       }
+       
+        .iteminsidebox3
+        {
+            width: 243px;
+            height: var(--percent);
+            background-color: red;   
+            border-bottom-left-radius: 2vw;
+            border-bottom-right-radius: 2vw;
+            animation: growth ease-in 2s;
+            
+            
+
+            
+        }
+
+        </style>
       
     </head>
     <script type='text/javascript'> ! function (e, t, a) { function n()
@@ -197,30 +255,19 @@
             <h2 style="text-align:center ;">......</h2>
             <div class="box4"  >
                 <ul class="insidebox4">
-                    <li class="itembox4"><h3>Giới thiệu.</h1></li>
-                    <li class="itembox4">Về Hoa.</li>
-                    <li class="itembox4">Chi tiêt về hoa.</li>
+                    <li class="itembox4"><h2>Giới thiệu.</h2></li>
+                    
                 </ul>
                 <ul class="insidebox4">
-                    <li class="itembox4"><h2>Đăng nhập.</h2></li>
-                    <li class="itembox4"><h2>Đăng ký.</h2></li>
+                    <li class="itembox4">Về Hoa.</li>
+                    <li class="itembox4">Chi tiêt về hoa.</li>
                 </ul>
             </div>
             
             <div class="para">
-                <p id="p1" class="paraitem">Flowers are symbolic of beauty, love and tranquillity. They form the soul of a garden and convey the message of nature to man. Flowers and objects of aesthetic, ornamental, social, religious and cultural value.
-                    They are used for conveying love, happiness, grief, mourning etc. In India, flowers are sanctified are commonly used in worship in homes and temples. Flowers are used on all festive occasions and in marriages and religious ceremonies.
-                    In all social functions, use of flowers and garlands has become symbolic. Annual, commonly, cultivated flowers are Carnation, Aster, Clendula, Petunia, Pansy, Nasturtium, Phlox, Zinnia, Marigold etc. Some other flowers usually grown in gardens are Antirrhinum, Portulaca, Chrysanthemum, Dahlia, Cosmos, Larkspur, Poppy, Stock, Sweet pea, Sweet William, Verbena. Common bulbous flowers are Narcissus, Iris, Spider lily, Nerine, Tulips etc.  
-                    Floriculture is the branch of ornamental horticulture concerned with growing and marketing of flowers and ornamental plants, as well as with flower arrangement.</p>
-                <p id="p2" class="paraitem">
-                    Fun facts about tulips!
-                    The most known meaning of tulips is perfect and deep love. As tulips are a classic flower that has been loved by many for centuries they have been attached with the meaning of love. They're ideal to give to someone who you have a deep, unconditional love for, whether it's your partner, children, parents or siblings.
-                </p>
-                <p id="p3" class="paraitem">
-                    Bangladesh is a very beautiful country with lots of different types of flowers. You can find numerous beautiful flowers there. The national flower of Bangladesh is Waterlily. The most seen flowers are Shelly, Rose, Water Lily, Kamini, Palash, Shefali, Tuberose, Sunflower, Marigold, Beli, etc. 
-                    Rose is a very common flower known all across the world. It is found in different colors. But the red rose is mostly used and popular. In Bangladesh, rose is the most used flower and you will find it in every corner of the country. 
-                    The water lily is the national flower, but it is seen in the pond and rivers only. It is very beautiful and unique flower. Lotus is pretty similar with water lily, but its color is red. The scientific name of Water Lily is Nymphaeaceae. Sunflower is also very popular and well known in the country. 
-                    It is seen in the village areas. People used to seed it in their crops field. It looks very beautiful and unique. Marigolds are known as ‘Gadha Fool’ in this country and it is also very popular. People use it to decorate marriage hall mostly. And the necklace of Gadha Fool is very popular in this country.
+                <p  class="paraitem">Hoa là biểu tượng của vẻ đẹp, tình yêu và sự yên bình. Chúng tạo thành linh hồn của khu vườn và truyền tải thông điệp của thiên nhiên đến con người. Hoa và các đồ vật có giá trị thẩm mỹ, trang trí, xã hội, tôn giáo và văn hóa. Chúng được sử dụng để truyền đạt tình yêu, hạnh phúc, đau buồn, tang chế, v.v. Ở Ấn Độ, hoa được coi là thần thánh thường được sử dụng trong việc thờ cúng trong nhà và đền thờ. Hoa được sử dụng trong tất cả các dịp lễ hội, hôn lễ và các nghi lễ tôn giáo. Trong tất cả các chức năng xã hội, việc sử dụng hoa và vườn đã trở thành biểu tượng. Các loại hoa thường được trồng hàng năm là <a href="https://i.pinimg.com/564x/10/fc/12/10fc12a8fd830a311b6c51430b4eace1.jpg" >Cẩm chướng</a>, <a href="https://i.pinimg.com/564x/60/35/af/6035afe285e10a5d235ca4db8a21d84b.jpg">Aster</a>, <a href="https://i.pinimg.com/564x/b2/a8/2e/b2a82ef5069d2ca903e7a9a78e0253f1.jpg">Clendula</a>, <a href="https://i.pinimg.com/564x/74/bb/2e/74bb2ec8fd0eb55c1ccc3088db889dae.jpg">Petunia</a>, <a href="https://i.pinimg.com/564x/a8/43/9f/a8439fe9ea0a518549540901abfe49c2.jpg">Pansy</a>, <a href="https://i.pinimg.com/564x/46/ea/b9/46eab9b0d57da25df9d09984ed57630a.jpg">Nasturtium</a>, <a href="https://i.pinimg.com/564x/07/91/cd/0791cdc6d00fff4141bcf7568b73a1e4.jpg">Phlox</a>, <a href="https://i.pinimg.com/736x/4a/ff/e6/4affe61fd04b4a21af3b884cd7b21365.jpg">Zinnia</a>, <a href="https://i.pinimg.com/564x/dd/2f/0d/dd2f0d5e6e9076f452990df2bf908c09.jpg">Marigold</a>, v.v. Một số loài hoa khác thường được trồng trong vườn là Antirrhinum, Portulaca, Hoa cúc, Dahlia, Cosmos, Larkspur, Poppy, Stock, Đậu ngọt, William ngọt, Cỏ roi ngựa. Các loại hoa củ phổ biến là Narcissus, Iris, Spider lily, Nerine, Tulips, v.v. Nghề trồng hoa là một nhánh của nghề làm vườn trang trí liên quan đến việc trồng và bán hoa và cây cảnh, cũng như cắm hoa.</p>
+                <p  class="paraitem">
+                    Bangladesh là một đất nước rất xinh đẹp với rất nhiều loại hoa khác nhau. Bạn có thể tìm thấy rất nhiều hoa đẹp ở đó. Quốc hoa của Bangladesh là hoa Súng. Những loài hoa được nhìn thấy nhiều nhất là Shelly, Rose, Water Lily, Kamini, Palash, Shefali, Tuberose, Sunflower, Marigold, Beli, v.v. Hoa hồng là một loài hoa rất phổ biến được biết đến trên toàn thế giới. Nó được tìm thấy trong các màu sắc khác nhau. Nhưng hoa hồng đỏ được sử dụng chủ yếu và phổ biến. Ở Bangladesh, hoa hồng là loài hoa được sử dụng nhiều nhất và bạn sẽ tìm thấy nó ở mọi nơi trên đất nước. Hoa súng là quốc hoa, nhưng nó chỉ được thấy ở ao và sông. Đó là bông hoa rất đẹp và độc đáo. Hoa sen khá giống hoa súng nhưng màu đỏ. Hoa Súng có tên khoa học là Nymphaeaceae. Hướng dương cũng rất phổ biến và được nhiều người biết đến trong nước. Nó được nhìn thấy trong các khu vực làng. Mọi người thường gieo hạt trên cánh đồng hoa màu của họ. Nó trông rất đẹp và độc đáo. Cúc vạn thọ được gọi là 'Gadha Fool' ở đất nước này và nó cũng rất phổ biến. Mọi người sử dụng nó để trang trí hội trường hôn nhân là chủ yếu. Và chiếc vòng cổ của Gadha Fool rất phổ biến ở đất nước này.
                 </p>
                     
             </div>
@@ -238,8 +285,15 @@
                     <li class="dshoa">Hoa Anh Thảo: <a href="https://i.pinimg.com/564x/9c/aa/89/9caa89eccb4b806ca4507525372ac19b.jpg">Nhấp vào xem hoa Anh Thảo.</a></li>
                     <li class="dshoa">Hoa Tulip Đỏ: <a href="https://i.pinimg.com/564x/f8/8b/95/f88b958aceb26adbbd8a3062a05019f5.jpg">Nhấp vào xem hoa Tulip Đỏ.</a></li>
                 </ul>
-                <button  class="button" >Click chuột vào vị trí bất kì để thích...</button>
-                <div class="box3"></div>
+                
+                <div class="box3">
+                    <div id="X1" class="iteminsidebox3" style="--percent: 75%">  </div>
+                    <div id="X2" class="iteminsidebox3" style="--percent: 60%">  </div>
+                    <div id="X3" class="iteminsidebox3" style="--percent: 70%">  </div>
+                    <div id="X4" class="iteminsidebox3" style="--percent: 80%">  </div>
+                    <div id="X5" class="iteminsidebox3" style="--percent: 65%">  </div>
+                    <div id="X6" class="iteminsidebox3" style="--percent: 85%">  </div>
+                </div>
         </div>
     </body>  
 </html>
