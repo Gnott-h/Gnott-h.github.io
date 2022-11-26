@@ -5,15 +5,14 @@
     <head>
       <title>PageCuaPhu...</title>
       <meta charset="utf-8"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
        <style>
         .tab
         {
             width: 93vw;
             height: 50px;
-            
             border-bottom: 5px solid black;
-            margin-bottom: -30px;
-            
+            margin-bottom: -30px; 
 
         }
         .outline
@@ -42,16 +41,7 @@
             border-top-right-radius: 2vw;
 
         }
-        .button
-        {
-            
-            width: 30vw;
-            height: 30px;
-            padding: 10px ;
-            margin:  1vw 10vh;
-            
-            
-        }
+       
         .box2
         {
             width: 95vw;
@@ -61,12 +51,8 @@
             background-origin: content-box;
             background-position: center;
             background-size: cover;
-            
             padding: 10px;         
-            margin-top: 30px ;
-        
-
-            
+            margin-top: 30px ;    
         }
         .box2:hover
         {
@@ -113,12 +99,35 @@
         {
            color: cadetblue;
         }
-        button:active
+        .button2
         {
+            width: 500px;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            padding: 12px 38px;
+            cursor: pointer;
+            transition: opacity 0.2s linear ;
+            text-align: center;
             
-            position: relative;
-            left: 500px;
+            
         }
+        .button2:hover
+        {
+            opacity: 0.8;
+        }
+        .button2--test
+        {
+            background-color: #71be34;
+        }
+        .button2--disable
+        {
+            opacity: 0.5 !important;
+            cursor: none;
+        }
+
         .fixedBox
         {
             background-color: palevioletred;
@@ -218,9 +227,47 @@
         }
        .iteminsidebox3:hover
        {
-        background-position: right;
+        background-position: right ;
+        opacity: 1.2;
        }
-       
+       .tymbox
+       {
+        width: 100px;
+        height: 100px;
+        background-color: antiquewhite;
+       }
+       .hear {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            margin: 50px auto;
+            background-color: rgba(52, 152, 219, 1);
+            transform: rotate(45deg);
+        }
+        .hear:before,
+        .hear:after {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            content: '';
+            background-color: rgba(52, 152, 219, 1);
+        }
+        .hear:before:active
+        {
+            background-color: red;  
+        }
+        .hear:active
+        {
+            background-color: red;
+        }
+        .hear:before {
+            bottom: 0px;
+            left: -20px;
+        }
+        .hear:after {
+            top: -20px;
+            right: 0px;
+        }
         .iteminsidebox3
         {
             width: 15em;
@@ -229,11 +276,13 @@
             border-bottom-left-radius: 2vw;
             border-bottom-right-radius: 2vw;
             animation: growth ease-in 2s;
+            transition: opacity 0.2s linear;
             
             
 
             
         }
+        
         .boxchuaboxhoa
         {
             width: 95vw;
@@ -247,12 +296,110 @@
           height: 250px;  
           background-color:white;
         }
+        
+        .toastbox
+        {
+        width: 50em;
+          height: 250px;  
+          background-color:white;
+          
+        }
+        .toast
+        {
+            height: 50px;
+            width: 350px;
+            background-color: antiquewhite;
+            align-items: center;
+            display: flex;
+            border-radius: 35px;
+            border-left: 6px solid;
+            border-top: 4px solid;
+            border-bottom: 1px solid;
+            border-width: 2px solid;
+            padding: 20px 0px;
+            margin: 20px;
+            box-shadow: 0px 5px 8px black;  
+
+        }
+        @keyframes slide
+        {
+            from
+            {
+                opacity: 0;
+                transform: translateX(600px);
+            }
+            to 
+            {  opacity: 2;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fade  
+        {      
+            to 
+            {
+                opacity: 0;
+            }
+        }
+        .toast__body
+        {
+         flex-grow: 1;
+           
+        }
+        .toasthead
+        {
+            margin-bottom: 8px;
+            margin-top: 10px;
+            
+        }
+        .toastpara
+        {
+            margin-top: 0px;
+        }
+        .toast__icon
+        {
+            padding: 0px 16px;
+            font-size: 24px;
+        }
+        .toast__close
+        {
+            padding: 0px 16px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .toast__close:hover
+        {
+            opacity: 0.7;
+        }
+        .toast--success
+        {
+            border-color: #71be34;
+            position:fixed;
+            top: 16px;
+            right: 5px;
+            transform: translateX(600px);
+            animation: slide linear 3s , fade linear 1s 2s ;
+        }
+        .toast--error{
+            border-color: crimson;
+            position:fixed;
+            top: 16px;
+            transform: translateX(600px);
+            right: 5px;
+        }
+        .toast--success .toast__icon
+        {
+           color: #71be34;
+        }
+        .toast--error .toast__icon
+        {
+            color: crimson;
+        }
         .boxmove
         {
 
             width: 50px;
             height: 50px;
-            animation:dich_chuyen 15s infinite;
+            animation:dich_chuyen 20s infinite;
             position: relative;
             background-image: url(https://i.pinimg.com/564x/11/40/ae/1140ae8029f8c538e29cc2771b873c11.jpg);
             background-position: center;
@@ -271,7 +418,7 @@
     25%  {top:100px;left:100vw:px;background-color:green;width:200px;height:200px;}
     50%  {top:500px;left:250px;background-color:green;width:200px;height:200px;}
     60%  {top:500px;left:500px;background-color:blue;width:50px;height:100px;width:100px;}
-    70%  {top:100px;left:250px;background-color:blue;width:50px;height:300px;width:300px;}
+    70%  {top:100px;left:250px;background-color:blue;width:50px;height:200px;width:200px;}
     90%  {top:100px;left:0px;background-color:yellow;width:150px;height:150px;}
     100% {top:0px;left:0px;background-color:red;width:50px;height:50px;}
        }
@@ -283,8 +430,9 @@
     50%  {top:0px;left:300px;background-color:green;width:150px;height:100px;}
     60%  {top:0px;right:200px;background-color:blue;width:100px;height:80px;}
     70%  {right:10px;top:300px;background-color:blue;width:40px;height:80px;}
-    90%  {left:250px;left:100px;background-color:yellow;width:300px;height:300px;}
+    90%  {left:250px;left:100px;background-color:yellow;width:400px;height:400px;}
     100% {top:0px;left:50px;background-color:red;width:70px;height:100px;}
+
 }
 
         </style>
@@ -293,6 +441,7 @@
     <script type='text/javascript'> ! function (e, t, a) { function n()
          { c( ".heart{width: 30px;height: 30px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
     <body>
+        
         <div class="outline">    
             <div class="fixedBox">
                 <div>
@@ -326,7 +475,9 @@
                 <div class="boxchuaboxhoa">
                     <div class="boxhoa">
                         <ul>
-                            <li class="dshoa">Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a></li>  
+                            <li class="dshoa">Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a> 
+                            
+                        </li>  
                             <li class="dshoa">Hoa Delphis: <a href="https://i.pinimg.com/564x/42/ba/85/42ba85aa4324772cbb954151dda84566.jpg">Nhấp vào xem hoa Delphis.</a></li>
                             <li class="dshoa">Hoa Carnation: <a href="https://i.pinimg.com/564x/33/3c/fa/333cfaa6da3b75215d503a83a4c03215.jpg"> Nhấp vào xem hoa Carnation.</a></li>
                             <li class="dshoa">Hoa Anh Đào: <a href="https://i.pinimg.com/564x/e5/30/5b/e5305be343a497124a338e007f9ac439.jpg">Nhấp vào xem hoa Anh Đào.</a></li>
@@ -341,11 +492,36 @@
                         </ul>
                     </div>
                     <div class="boxani">
-                           <div class="boxmove">
-                            <h4>Bắt em bằng cách giữ chuột.</h4>
+                           <div class="boxmove">  
                            </div>
+                           
 
                     </div>
+                    
+                   <div class="toastbox">
+                    <div class="toast toast--success">
+                        <div class="toast__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="toast__body">
+                            <h3 class="toasthead">Success!</h3>
+                            <p class="toastpara">This toast is testing.</p>
+                        </div>
+                        <div class="toast__close">
+                            <i class="fa-solid fa-xmark"></i> </div>
+                    </div>
+                    <div class="toast toast--error">
+                        <div class="toast__icon">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="toast__body">
+                            <h3 class="toasthead">Error!</h3>
+                            <p class="toastpara">This toast is testing.</p>
+                        </div>
+                        <div class="toast__close">
+                            <i class="fa-solid fa-xmark"></i> </div>
+                    </div>
+                   </div>
                 </div>
                 <div class="box3">
                     <div id="X1" class="iteminsidebox3" style="--percent: 75%">  </div>
