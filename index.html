@@ -25,7 +25,7 @@
            content: 100px white ;
            border-top-left-radius: 2vw;
            border-top-right-radius: 2vw;
-           
+           width: 99vw;
            border-bottom-width: 0px;
            padding-bottom: 20px;
            
@@ -46,7 +46,7 @@
        
         .box2
         {
-            width: 95vw;
+            width: 97.8vw;
             height: 190px;           
             background-image: url(https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
             background-repeat:no-repeat;
@@ -58,7 +58,7 @@
         }
         .box2:hover
         {
-            width: 95vw;
+            width: 97.8vw;
             height: 190px;           
             background-image: url(https://i.pinimg.com/564x/02/c4/ba/02c4ba5ba88c900f99a3859c44661a67.jpg);
             background-repeat:no-repeat;
@@ -80,7 +80,7 @@
 }
         .box3
         {
-            width: 91.3em;
+            width: 92.9em;
             height: 100vh;
             background-image: linear-gradient(0,grey,white);
             display: flex;
@@ -136,7 +136,7 @@
         .fixedBox
         {
             background-color: palevioletred;
-            width: 95vw;
+            width: 96.5vw;
             height: 50px;
             margin-top: 5px;
             margin-left: 10px;
@@ -152,13 +152,12 @@
         .box4
         {
             background-clip: padding-box;
-            width: 95vw;
             height: 60px;
             background-color: papayawhip;
             margin-top: 40px;
             display:flex;
             justify-content: space-between;
-            width: 95vw;
+            width: 96.5vw;
             height: 50px;
             margin-top: 5px;
             margin-left: 10px;
@@ -193,12 +192,11 @@
         {
             display: flex;
             margin-left: 10px;
-            margin-right: 15px;
+            margin-right: 9px;
             background-color: cadetblue;
             justify-content: space-around;
-           
             
-            
+               
             
         }  
         .para2
@@ -207,7 +205,8 @@
         }    
         .paraitem
         {
-          margin-left: 20px;
+          margin-left: 30px;
+          margin-right: 15px;
         }
         #X1
         {
@@ -299,12 +298,7 @@
             justify-content: space-between;
 
         }
-        .boxani
-        {
-          width: 50em;
-          height: 250px;  
-          background-color:white;
-        }
+        
         
         .boxmove
         {
@@ -321,8 +315,7 @@
         }
         .boxmove:active
         {
-            width: 1px;
-            height: 1px;
+          
             animation:dich_chuyenfake 5s infinite;
         }
         @keyframes dich_chuyen {
@@ -369,6 +362,7 @@ body > div {
 
 /* Block */
 .btn {
+  margin: 20px;
   display: inline-block;
   text-decoration: none;
   background-color: transparent;
@@ -379,6 +373,7 @@ body > div {
   border-radius: 50px;
   cursor: pointer;
   min-width: 120px;
+  height:  50px;
   transition: opacity 0.2s ease;
 }
 
@@ -500,17 +495,15 @@ body > div {
 
 </style>
     <script>
+
         function showSuccessToast() {
-          toast({
-            title: "Warning!!",
-            message: "Chức năng đang trong giai đoạn thử nghiệm.",
-            type: "success",
-            duration: 5000
-          });
+          toast({ title: "Warning!!",message: "Chức năng đang trong giai đoạn thử nghiệm.",type: "success",duration: 5000});
         }
-      
-      
-      
+
+        function showMeoToast() {
+          toast({title: "Lêu lêu!!",message: "U cant catch me",type: "success",duration: 5000});
+        }
+
         function toast({ title = "", message = "", type = "info", duration = 3000 }) {
         const main = document.getElementById("toast");
         if (main) {
@@ -541,7 +534,7 @@ body > div {
                           </div>
                           <div class="toast__body">
                               <h3 class="toast__title">${title}</h3>
-                              <p class="toast__msg">${message}</p>
+                              <p class="toast__msg">${message}   </p>
                           </div>
                           <div class="toast__close">
                               <i class="fas fa-times"></i>
@@ -605,13 +598,14 @@ body > div {
                         </ul>
                     </div>
                     <div class="boxani">
-                           <div class="boxmove">  
+                           <div  onmouseenter="showMeoToast()" class="boxmove">  
                            </div> 
-                           <div>
-                            <div id="toast"></div>
-                            <div onclick="showSuccessToast();" class="btn btn--success">Bấm để dừng con mèo.</div>
-                          </div>                         
+                           
+                           
+                                                   
                     </div>
+                    <div id="toast"></div>
+                    <div onclick="showSuccessToast();" class="btn btn--success">Bấm để dừng con mèo hoặc nhấn giữ con mèo để bắt. </div>
                 </div>
                 
                 <div class="box3">
