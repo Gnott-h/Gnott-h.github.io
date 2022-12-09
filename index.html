@@ -5,358 +5,11 @@
     <head>
       <title>PageCuaPhu...</title>
       <meta charset="utf-8">    
-      
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />      
-      
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="asset/css/base.css">
+      <link rel="stylesheet" href="asset/css/main.css">
        <style>
-        .tab
-        {
-            width: 93vw;
-            height: 50px;
-            border-bottom: 5px solid black;
-            margin-bottom: -30px; 
-
-        }
-        .outline
-        {
-           
-           border: 5px solid black ;
-           border-width: 10px;
-           content: 100px white ;
-           border-top-left-radius: 2vw;
-           border-top-right-radius: 2vw;
-           width: 99vw;
-           border-bottom-width: 0px;
-           padding-bottom: 20px;
-           
-        }
-        .item
-        {
-            width: 100px;
-            height: 50px;
-            border-left: 100vh black;
-            border: 5px solid black;
-            border-bottom-width: 0;
-            margin-bottom: -5px;
-            background: white;
-            border-top-left-radius: 2vw;
-            border-top-right-radius: 2vw;
-
-        }
        
-        .box2
-        {
-            width: 97.8vw;
-            height: 190px;           
-            background-image: url(https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-            background-repeat:no-repeat;
-            background-origin: content-box;
-            background-position: center;
-            background-size: cover;
-            padding: 10px;         
-            margin-top: 30px ;    
-        }
-        .box2:hover
-        {
-            width: 97.8vw;
-            height: 190px;           
-            background-image: url(https://i.pinimg.com/564x/02/c4/ba/02c4ba5ba88c900f99a3859c44661a67.jpg);
-            background-repeat:no-repeat;
-            background-origin: content-box;
-            background-size: cover;
-            background-position: center;
-            padding: 10px;         
-            margin-top: 30px ;  
-        }
-        @keyframes growth {
-        from{
-         opacity: 0;
-         height: calc(var(--percent)-50%);
-            }
-        to{
-         opacity: 1;
-         height: calc(var(--percent));
-          }
-}
-        .box3
-        {
-            width: 92.9em;
-            height: 100vh;
-            background-image: linear-gradient(0,grey,white);
-            display: flex;
-            justify-content: space-around;
-            min-width: fit-content;
-            margin-left: 10px;
-            margin-right: 20px;
-            align-items: flex-start;
-            
-
-
-        }
-        h1:hover
-        {
-            color:brown
-        }
-        h1::selection
-        {
-           color: cadetblue;
-        }
-        .button2
-        {
-            width: 200px;
-            height: 30px;
-            background-color: transparent;
-            border: none;
-            border-radius: 30px;
-            color: #fff;
-            padding: 12px 38px;
-            cursor: pointer;
-            transition: opacity 0.2s linear ;
-            text-align: center;
-            margin-top: 30px;
-            box-shadow: 0px 5px 8px black; 
-            
-            
-        }
-        .button2:hover
-        {
-            opacity: 0.8;
-        }
-        .button2--test
-        {
-            background-color: #71be34;
-        }
-        
-        .button2--disable
-        {
-            opacity: 0.5 !important;
-            cursor: none;
-        }
-
-        .fixedBox
-        {
-            background-color: palevioletred;
-            width: 96.5vw;
-            height: 50px;
-            margin-top: 5px;
-            margin-left: 10px;
-            margin-right: 20px;
-            border-top-left-radius: 1vw;
-            border-top-right-radius: 1vw;
-            position: fixed;
-        }
-        #fix
-        {
-            margin-top: 5px;
-        }
-        .box4
-        {
-            background-clip: padding-box;
-            height: 60px;
-            background-color: papayawhip;
-            margin-top: 40px;
-            display:flex;
-            justify-content: space-between;
-            width: 96.5vw;
-            height: 50px;
-            margin-top: 5px;
-            margin-left: 10px;
-            margin-right: 20px;
-            padding-bottom: 10px;
-            
-            
-        }
-        .insidebox4
-        {
-            padding-left: 0;
-            margin:auto 16px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .itembox4
-        {
-            padding-left: 0;
-            margin:auto 16px;
-            
-        }
-        #fun
-        {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-        .dshoa
-        {
-            min-width: 90px;
-        }
-        .para
-        {
-            display: flex;
-            margin-left: 10px;
-            margin-right: 9px;
-            background-color: cadetblue;
-            justify-content: space-around;
-            
-               
-            
-        }  
-        .para2
-        {
-        margin-top: 8px;
-        }    
-        .paraitem
-        {
-          margin-left: 30px;
-          margin-right: 15px;
-        }
-        #X1
-        {
-            background-image: url(https://i.pinimg.com/564x/c2/44/0b/c2440ba8237fccab351d708c497d4e6e.jpg);
-        }
-        #X2
-        {
-            background-image: url(https://i.pinimg.com/564x/4b/05/0a/4b050ae725e89b4965f72f3efd006b32.jpg);
-            
-        }
-        #X3
-        {
-            background-image: url(https://i.pinimg.com/564x/d9/5b/83/d95b837e4b032de12e469bbe980f4ca6.jpg);
-        }
-        #X4
-        {
-            background-image: url(https://i.pinimg.com/564x/bb/93/2b/bb932bbc882a03b42cb41d0326a8e8cb.jpg);
-        }
-        #X5
-        {
-            background-image: url(https://i.pinimg.com/564x/1d/37/0f/1d370f9c2180351cfb06964e7db29540.jpg);
-        }
-        #X6
-        {
-            background-image: url(https://i.pinimg.com/564x/0b/3f/ef/0b3fef48a33529b7f0892df36f3da4e3.jpg);
-        }
-       .iteminsidebox3:hover
-       {
-        background-position: right ;
-        opacity: 1.2;
-       }
-       .tymbox
-       {
-        width: 100px;
-        height: 100px;
-        background-color: antiquewhite;
-       }
-       .hear {
-            position: relative;
-            width: 50px;
-            height: 50px;
-            margin: 50px auto;
-            background-color: rgba(52, 152, 219, 1);
-            transform: rotate(45deg);
-        }
-        .hear:before,
-        .hear:after {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            content: '';
-            background-color: rgba(52, 152, 219, 1);
-        }
-        .hear:before:active
-        {
-            background-color: red;  
-        }
-        .hear:active
-        {
-            background-color: red;
-        }
-        .hear:before {
-            bottom: 0px;
-            left: -20px;
-        }
-        .hear:after {
-            top: -20px;
-            right: 0px;
-        }
-        .iteminsidebox3
-        {
-            width: 15em;
-            height: var(--percent);
-            background-color: red;   
-            border-bottom-left-radius: 2vw;
-            border-bottom-right-radius: 2vw;
-            animation: growth ease-in 2s;
-            transition: opacity 0.2s linear;
-            
-            
-
-            
-        }
-        
-        .boxchuaboxhoa
-        {
-            width: 95vw;
-            display: flex;
-            justify-content: space-between;
-
-        }
-        
-        
-        .boxmove
-        {
-
-            width: 50px;
-            height: 50px;
-            animation:dich_chuyen 20s infinite;
-            position: relative;
-            background-image: url(https://i.pinimg.com/564x/11/40/ae/1140ae8029f8c538e29cc2771b873c11.jpg);
-            background-position: center;
-            background-size: cover;
-            border-radius: 1vw ;
-
-        }
-        .boxmove:active
-        {
-          
-            animation:dich_chuyenfake 5s infinite;
-        }
-        @keyframes dich_chuyen {
-    0%   {top:0px;left:0px;background-color:red;width: 50px;height: 50px;}
-    25%  {top:100px;left:100vw:px;background-color:green;width:200px;height:200px;}
-    50%  {top:500px;left:250px;background-color:green;width:200px;height:200px;}
-    60%  {top:500px;left:500px;background-color:blue;width:50px;height:100px;width:100px;}
-    70%  {top:100px;left:250px;background-color:blue;width:50px;height:200px;width:200px;}
-    90%  {top:100px;left:0px;background-color:yellow;width:150px;height:150px;}
-    100% {top:0px;left:0px;background-color:red;width:50px;height:50px;}
-       }
-       @keyframes dich_chuyenfake {
-    0%   {right:0px;bottom:0px;background-color:red;}
-    10%  {left:300px;right:500px;background-color:green;width:150px;height:100px;}
-    25%  {left:0px;right:300px;background-color:green;width:150px;height:100px;}
-    40%  {right:300px;top:1000px;background-color:blue;width:40px;height:80px;}
-    50%  {top:0px;left:300px;background-color:green;width:150px;height:100px;}
-    60%  {top:0px;right:200px;background-color:blue;width:100px;height:80px;}
-    70%  {right:10px;top:300px;background-color:blue;width:40px;height:80px;}
-    90%  {left:250px;left:100px;background-color:yellow;width:400px;height:400px;}
-    100% {top:0px;left:50px;background-color:red;width:70px;height:100px;}
-
-}
-     
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-family: "Helvetica Neue";
-  background-color: #f4f4f5;
-}
-
-body > div {
-  margin: auto;
-}
 
 /* ======= Buttons ======== */
 
@@ -424,7 +77,7 @@ body > div {
   align-items: center;
   background-color: #fff;
   border-radius: 2px;
-  padding: 20px 0;
+  padding: 20px ;
   min-width: 400px;
   max-width: 450px;
   border-radius: 50px;
@@ -495,15 +148,9 @@ body > div {
 
 </style>
     <script>
-
         function showSuccessToast() {
           toast({ title: "Warning!!",message: "Chức năng đang trong giai đoạn thử nghiệm.",type: "success",duration: 5000});
         }
-
-        function showMeoToast() {
-          toast({title: "Lêu lêu!!",message: "U cant catch me",type: "success",duration: 5000});
-        }
-
         function toast({ title = "", message = "", type = "info", duration = 3000 }) {
         const main = document.getElementById("toast");
         if (main) {
@@ -547,79 +194,31 @@ body > div {
     <script type='text/javascript'> ! function (e, t, a) { function n()
          { c( ".heart{width: 30px;height: 30px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
     <body> 
-        <div class="outline">    
-            <div class="fixedBox">
-                <div>
-                    <h1 id="fix" style="text-align: center ;"  >"This page have nothing but beautiful flowers"</h1>
-                </div>
-            </div>
-            <div class="box2"></div>
-            
-            <h1 style="text-align:center">
-                “A flower cannot blossom without sunshine, and a man cannot live without love.” – ...
-            </h1>
-            <h2 style="text-align:center ;">......</h2>
-            <div class="box4"  >
-                <ul class="insidebox4">
-                    <li class="itembox4"><h2>Giới thiệu.</h2></li>
-                    
-                </ul>
-                <ul class="insidebox4">
-                    <li onclick="showSuccessToast()" class="itembox4">Về Hoa.</li>
-                    <li onclick="showSuccessToast()" class="itembox4">Chi tiêt về hoa.</li>
-                </ul>
-                
-            </div>
-        
-            <div class="para">
-                <p  class="paraitem">Hoa là biểu tượng của vẻ đẹp, tình yêu và sự yên bình. Chúng tạo thành linh hồn của khu vườn và truyền tải thông điệp của thiên nhiên đến con người. Hoa và các đồ vật có giá trị thẩm mỹ, trang trí, xã hội, tôn giáo và văn hóa. Chúng được sử dụng để truyền đạt tình yêu, hạnh phúc, đau buồn, tang chế, v.v. Ở Ấn Độ, hoa được coi là thần thánh thường được sử dụng trong việc thờ cúng trong nhà và đền thờ. Hoa được sử dụng trong tất cả các dịp lễ hội, hôn lễ và các nghi lễ tôn giáo. Trong tất cả các chức năng xã hội, việc sử dụng hoa và vườn đã trở thành biểu tượng. Các loại hoa thường được trồng hàng năm là <a href="https://i.pinimg.com/564x/10/fc/12/10fc12a8fd830a311b6c51430b4eace1.jpg" >Cẩm chướng</a>, <a href="https://i.pinimg.com/564x/60/35/af/6035afe285e10a5d235ca4db8a21d84b.jpg">Aster</a>, <a href="https://i.pinimg.com/564x/b2/a8/2e/b2a82ef5069d2ca903e7a9a78e0253f1.jpg">Clendula</a>, <a href="https://i.pinimg.com/564x/74/bb/2e/74bb2ec8fd0eb55c1ccc3088db889dae.jpg">Petunia</a>, <a href="https://i.pinimg.com/564x/a8/43/9f/a8439fe9ea0a518549540901abfe49c2.jpg">Pansy</a>, <a href="https://i.pinimg.com/564x/46/ea/b9/46eab9b0d57da25df9d09984ed57630a.jpg">Nasturtium</a>, <a href="https://i.pinimg.com/564x/07/91/cd/0791cdc6d00fff4141bcf7568b73a1e4.jpg">Phlox</a>, <a href="https://i.pinimg.com/736x/4a/ff/e6/4affe61fd04b4a21af3b884cd7b21365.jpg">Zinnia</a>, <a href="https://i.pinimg.com/564x/dd/2f/0d/dd2f0d5e6e9076f452990df2bf908c09.jpg">Marigold</a>, v.v. Một số loài hoa khác thường được trồng trong vườn là <a href="https://i.pinimg.com/564x/ef/44/b1/ef44b1e9562b1953b1faa06a49872aaa.jpg">Antirrhinum</a>, <a href="https://i.pinimg.com/564x/89/2a/1e/892a1ee004a1ee411fe90ec9c4ac7a02.jpg">Portulaca</a>, <a href="https://i.pinimg.com/564x/82/d7/4f/82d74f760d17bed15e867f77777af235.jpg">Hoa cúc</a>, <a href="https://i.pinimg.com/564x/33/cd/a6/33cda605ec555896b943b4a50f61eba1.jpg">Dahlia</a>, <a href="https://i.pinimg.com/564x/49/d5/7b/49d57b5ff36d11f5f6592638563d4ead.jpg">Cosmos</a>, <a href="https://i.pinimg.com/564x/0e/46/1b/0e461bc00bebada906776c0035ead2e5.jpg">Larkspur</a>, <a href="https://i.pinimg.com/736x/fe/87/f9/fe87f9971ab28a5641832f7c30746340.jpg">Poppy</a>, <a href="https://i.pinimg.com/564x/f1/7f/2a/f17f2a606c31d4841e1c692551ab3049.jpg">Stock</a>,<a href="https://i.pinimg.com/564x/4f/19/f6/4f19f6974c3682712f054f8d021e3076.jpg">Cỏ roi ngựa</a>. Các loại hoa củ phổ biến là Narcissus, Iris, Spider lily, Nerine, Tulips, v.v. Nghề trồng hoa là một nhánh của nghề làm vườn trang trí liên quan đến việc trồng và bán hoa và cây cảnh, cũng như cắm hoa.</p>
-                <p  class="paraitem">
-                    Bangladesh là một đất nước rất xinh đẹp với rất nhiều loại hoa khác nhau. Bạn có thể tìm thấy rất nhiều hoa đẹp ở đó. Quốc hoa của Bangladesh là hoa Súng. Những loài hoa được nhìn thấy nhiều nhất là Shelly, Rose, Water Lily, Kamini, Palash, Shefali, Tuberose, Sunflower, Marigold, Beli, v.v. Hoa hồng là một loài hoa rất phổ biến được biết đến trên toàn thế giới. Nó được tìm thấy trong các màu sắc khác nhau. Nhưng hoa hồng đỏ được sử dụng chủ yếu và phổ biến. Ở Bangladesh, hoa hồng là loài hoa được sử dụng nhiều nhất và bạn sẽ tìm thấy nó ở mọi nơi trên đất nước. Hoa súng là quốc hoa, nhưng nó chỉ được thấy ở ao và sông. Đó là bông hoa rất đẹp và độc đáo. Hoa sen khá giống hoa súng nhưng màu đỏ. Hoa Súng có tên khoa học là Nymphaeaceae. Hướng dương cũng rất phổ biến và được nhiều người biết đến trong nước. Nó được nhìn thấy trong các khu vực làng. Mọi người thường gieo hạt trên cánh đồng hoa màu của họ. Nó trông rất đẹp và độc đáo. Cúc vạn thọ được gọi là 'Gadha Fool' ở đất nước này và nó cũng rất phổ biến. Mọi người sử dụng nó để trang trí hội trường hôn nhân là chủ yếu. Và chiếc vòng cổ của Gadha Fool rất phổ biến ở đất nước này.
-                </p>
-                    
-            </div>
-                <div class="boxchuaboxhoa">
-                    <div class="boxhoa">
-                        <ul>
-                            <li class="dshoa">Hoa Hồng:<a href="https://i.pinimg.com/564x/80/91/61/80916113501719bce8c687b4b62e7464.jpg"> Nhấp vào xem hoa Hồng.</a> 
-                            
-                        </li>  
-                            <li class="dshoa">Hoa Delphis: <a href="https://i.pinimg.com/564x/42/ba/85/42ba85aa4324772cbb954151dda84566.jpg">Nhấp vào xem hoa Delphis.</a></li>
-                            <li class="dshoa">Hoa Carnation: <a href="https://i.pinimg.com/564x/33/3c/fa/333cfaa6da3b75215d503a83a4c03215.jpg"> Nhấp vào xem hoa Carnation.</a></li>
-                            <li class="dshoa">Hoa Anh Đào: <a href="https://i.pinimg.com/564x/e5/30/5b/e5305be343a497124a338e007f9ac439.jpg">Nhấp vào xem hoa Anh Đào.</a></li>
-                            <li class="dshoa">Hoa Hồng Trắng: <a href="https://i.pinimg.com/564x/b1/14/7b/b1147b876b6d47bc5cfa3fed6a542f40.jpg">Nhấp vào xem hoa Hồng Trắng.</a></li>
-                            <li class="dshoa">Hoa Cúc: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-cuc.jpg">Nhấp vào xem hoa Hoa Cúc.</a></li>
-                            <li class="dshoa">Hoa Thược Dược: <a href="https://khbvptr.vn/wp-content/uploads/2021/05/hoa-thuoc-duoc.jpg">Nhấp vào xem hoa Thược Dược.</a></li>
-                            <li class="dshoa">Hoa Tulip: <a href="https://i.pinimg.com/564x/a2/45/9d/a2459dfb168a09e1484fd79587c49859.jpg">Nhấp vào xem hoa Tulip.</a></li>
-                            <li class="dshoa">Hoa Trái Tim Rỉ Máu: <a href="https://giaitri.vn/wp-content/uploads/2019/12/10-loai-hoa-dep-nhat-the-gioi-loai-thu-6-o-viet-nam-moc-day-nha-nao-cung-co-5-1559027405-938-width600height313.jpg">Nhấp vào xem Hoa trái tim rỉ máu.</a></li>
-                            <li class="dshoa">Hoa Phi Yến: <a href="https://i.pinimg.com/564x/45/cf/34/45cf34472907d7e0ad1c6c4826a5af8c.jpg">Nhấp vào xem hoa Phi Yến.</a></li>
-                            <li class="dshoa">Hoa Anh Thảo: <a href="https://i.pinimg.com/564x/9c/aa/89/9caa89eccb4b806ca4507525372ac19b.jpg">Nhấp vào xem hoa Anh Thảo.</a></li>
-                            <li class="dshoa">Hoa Tulip Đỏ: <a href="https://i.pinimg.com/564x/f8/8b/95/f88b958aceb26adbbd8a3062a05019f5.jpg">Nhấp vào xem hoa Tulip Đỏ.</a></li>
-                        </ul>
-                    </div>
-                    <div class="boxani">
-                           <div  onmouseenter="showMeoToast()" class="boxmove">  
-                           </div> 
-                           
-                           
-                                                   
-                    </div>
-                    <div id="toast"></div>
-                    <div onclick="showSuccessToast();" class="btn btn--success">Bấm để dừng con mèo hoặc nhấn giữ con mèo để bắt. </div>
-                </div>
-                
-                <div class="box3">
-                    <div id="X1" class="iteminsidebox3" style="--percent: 75%">  </div>
-                    <div id="X2" class="iteminsidebox3" style="--percent: 60%">  </div>
-                    <div id="X3" class="iteminsidebox3" style="--percent: 70%">  </div>
-                    <div id="X4" class="iteminsidebox3" style="--percent: 80%">  </div>
-                    <div id="X5" class="iteminsidebox3" style="--percent: 65%">  </div>
-                    <div id="X6" class="iteminsidebox3" style="--percent: 85%">  </div>
-                </div>
-                
+      <div class="app">
+        <header class="header">
+        <div class="grid">
+          <nav class="header__navbar">
+            <ul class="header__navbar-list">
+              <div id="toast"></div>
+                <li class="header__navbar-item header__navbar-item--logo header__navbar-item--separate">Forst-Application</li>
+                <li class="header__navbar-item">Contact</li>
+            </ul>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                  <a href="" class="header__navbar-item-link" >Notification</a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="" class="header__navbar-item-link">Support</a>
+                </li>
+                <li class="header__navbar-item header__navbar-item--Strong">Sign in</li>
+                <li class="header__navbar-item header__navbar-item--Strong">Register</li>
+            </ul>
+        </nav>
         </div>
-        
-        
-    </body> 
-     
+           
+        </header>
+        <div class="container"></div>
+        <div class="footer"></div>
+    </div>
+    </body>  
 </html>
