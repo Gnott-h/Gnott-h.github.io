@@ -1,224 +1,41 @@
 <!DOCTYPE html>
-<html>
-    
-    <link rel="stylesheet" href="main.css">
-    <head>
-      <title>PageCuaPhu...</title>
-      <meta charset="utf-8">    
-      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="asset/css/base.css">
-      <link rel="stylesheet" href="asset/css/main.css">
-       <style>
-       
-
-/* ======= Buttons ======== */
-
-/* Block */
-.btn {
-  margin: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-  padding: 12px 48px;
-  border-radius: 50px;
-  cursor: pointer;
-  min-width: 120px;
-  height:  50px;
-  transition: opacity 0.2s ease;
-}
-
-/* Modifier */
-.btn--size-l {
-  padding: 16px 56px;
-}
-
-.btn--size-s {
-  padding: 8px 32px;
-}
-
-.btn:hover {
-  opacity: 0.8;
-}
-
-.btn + .btn {
-  margin-left: 16px;
-}
-
-.btn--success {
-  background-color: #71be34;
-}
-
-.btn--warn {
-  background-color: #ffb702;
-}
-
-.btn--danger {
-  background-color: #ff623d;
-}
-
-.btn--disabled {
-  opacity: 0.5 !important;
-  cursor: default;
-}
-
-/* ======= Toast message ======== */
-
-#toast {
-  position: fixed;
-  top: 32px;
-  right: 32px;
-}
-
-.toast {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 2px;
-  padding: 20px ;
-  min-width: 400px;
-  max-width: 450px;
-  border-radius: 50px;
-  border-left: 4px solid;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
-  margin: 10px;
-  
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(calc(100% + 32px));
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-  }
-}
-
-.toast--success {
-  border-color: #47d864;
-  
-}
-
-.toast--success .toast__icon {
-  color: #47d864;
-}
-
-
-.toast__icon {
-  font-size: 24px;
-}
-
-.toast__icon,
-.toast__close {
-  padding: 0 16px;
-}
-
-.toast__body {
-  flex-grow: 1;
-}
-
-.toast__title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-}
-
-.toast__msg {
-  font-size: 14px;
-  color: #888;
-  margin-top: 6px;
-  line-height: 1.5;
-}
-
-.toast__close {
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, this page was hacked:((</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+    }
 </style>
+<body>
+    <canvas id="canvas" style="background: #111;"></canvas> 
+    
     <script>
-        function showSuccessToast() {
-          toast({ title: "Warning!!",message: "Chức năng đang trong giai đoạn thử nghiệm.",type: "success",duration: 5000});
-        }
-        function toast({ title = "", message = "", type = "info", duration = 3000 }) {
-        const main = document.getElementById("toast");
-        if (main) {
-          const toast = document.createElement("div");
-          // Auto remove toast
-          const autoRemoveId = setTimeout(function () {
-            main.removeChild(toast);
-          }, duration + 1000);
-          // Remove toast when clicked
-          toast.onclick = function (e) {
-            if (e.target.closest(".toast__close")) {
-              main.removeChild(toast);
-              clearTimeout(autoRemoveId);
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        var W = window.innerWidth;
+        var H = window.innerHeight;
+        canvas.width = W;
+        canvas.height = H;
+        var str = '';
+        function draw(){
+            context.fillStyle = "black";
+            context.fillRect(0, 0, W, H);
+            context.fillStyle = "green";
+            for(var i = 0;i<100;i++)
+            {
+                var index = Math.floor(Math.random()*str.length);
+                var char = str[index];
+                context.fillText('Error.This page was hacked',Math.random()*800,Math.random()*800)
             }
-          };
-      
-          const icons = {
-            success: "fas fa-check-circle",
-          };
-          const icon = icons[type];
-          const delay = (duration / 1000).toFixed(2);
-      
-          toast.classList.add("toast", `toast--${type}`);
-          toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`;
-          toast.innerHTML = `
-                          <div class="toast__icon">
-                              <i class="${icon}"></i>
-                          </div>
-                          <div class="toast__body">
-                              <h3 class="toast__title">${title}</h3>
-                              <p class="toast__msg">${message}   </p>
-                          </div>
-                          <div class="toast__close">
-                              <i class="fas fa-times"></i>
-                          </div>
-                      `;
-          main.appendChild(toast);
         }
-      }
-      </script>
-    <script type='text/javascript'> ! function (e, t, a) { function n()
-         { c( ".heart{width: 30px;height: 30px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}" ), o(), r() } function r() { for (var e = 0; e < d.length; e++) d[e].alpha <= 0 ? (t.body.removeChild(d[e].el), d.splice(e, 1)) : (d[e].y--, d[e].scale += .004, d[e].alpha -= .013, d[e].el.style.cssText = "left:" + d[e].x + "px;top:" + d[e].y + "px;opacity:" + d[e].alpha + ";transform:scale(" + d[e].scale + "," + d[e].scale + ") rotate(45deg);background:" + d[e].color + ";z-index:99999"); requestAnimationFrame(r) } function o() { var t = "function" == typeof e.onclick && e.onclick; e.onclick = function (e) { t && t(), i(e) } } function i(e) { var a = t.createElement("div"); a.className = "heart", d.push({ el: a, x: e.clientX - 5, y: e.clientY - 5, scale: 1, alpha: 1, color: s() }), t.body.appendChild(a) } function c(e) { var a = t.createElement("style"); a.type = "text/css"; try { a.appendChild(t.createTextNode(e)) } catch (t) { a.styleSheet.cssText = e } t.getElementsByTagName("head")[0].appendChild(a) } function s() { return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")" } var d = []; e.requestAnimationFrame = function () { return e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) { setTimeout(e, 1e3 / 60) } }(), n() }(window, document); </script>
-    <body> 
-      <div class="app">
-        <header class="header">
-        <div class="grid">
-          <nav class="header__navbar">
-            <ul class="header__navbar-list">
-              <div id="toast"></div>
-                <li class="header__navbar-item header__navbar-item--logo header__navbar-item--separate">Forst-Application</li>
-                <li class="header__navbar-item">Contact</li>
-            </ul>
-            <ul class="header__navbar-list">
-                <li class="header__navbar-item">
-                  <a href="" class="header__navbar-item-link" >Notification</a>
-                </li>
-                <li class="header__navbar-item">
-                  <a href="" class="header__navbar-item-link">Support</a>
-                </li>
-                <li class="header__navbar-item header__navbar-item--Strong">Sign in</li>
-                <li class="header__navbar-item header__navbar-item--Strong">Register</li>
-            </ul>
-        </nav>
-        </div>
-           
-        </header>
-        <div class="container"></div>
-        <div class="footer"></div>
-    </div>
-    </body>  
+        setInterval(draw,150);
+    </script>
+</body>
 </html>
