@@ -4,19 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorry, this page was hacked:((</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    *{
-        margin: 0%;
-        padding: 0%;
-        overflow: hidden;
-    }
-</style>
 <body>
-    <canvas id="canvas" style="background: #111;"></canvas> 
+      <div id="flash" class="flash">
+        
+          <header>
+            <div  class="logo">Gnotth</div>
+            <div class="text">
+             <div id="homeb" class="home">Home</div>
+             <div id="aboutb" class="about">About</div>
+             <div id="serviceb" class="service">Service</div>
+             <div id="designb" class="design">Design</div>
+             <div id="contactb" class="contact">Contact</div>
+            </div>
+          </header>
+
+          <div  class="loginform">
+             <div id="sb"   class="mainbody">
+              <i id="s"  class="fa-solid fa-magnifying-glass"></i>
+              <input placeholder="Search..." id="ip" type="text">
+              <i id="x" class="fa-solid fa-xmark"></i>
+             </div>
+          </div>
+          <div id="linex" class="line"></div>
+          <div class="maintext">Ghibli Studio
+            <h1>Movie Collections</h1>
+          </div>
+          <div class="background"> 
+            <img src="wallpaperflare.com_wallpaper.jpg" alt=""> </div>
+          
+          
+          <div class="loginsite"></div> 
+      </div> 
+      <div class="connect"></div>
+      <div class="flash2">
+         <div class="mainbg">
+          <div class="slider">
+            <i id="node1" class="fa-regular fa-circle-dot"></i>
+            <i id="node2" class="fa-regular fa-circle-dot"></i>
+            <i id="node3" class="fa-regular fa-circle-dot"></i>
+          </div>
+          <div class="text">
+            <h1 id="text1" >Spirited Away</h1>
+            <h4 id="text2" >The film centers on Chihiro's quest to save her parents after they're transformed into pigs by Yubaba (Mari Natsuki/ Chihiro must overcome her selfish and self-pitying nature to win back her parents' humanity.</h4>
+            <div id="text3" class="button"> <h4>Watch Movie</h4></div>
+            <div class="contact2">
+              <i id="o1" class="fa-brands fa-youtube"></i>
+              <i id="o2" class="fa-brands fa-facebook"></i>
+              <i id="o3" class="fa-solid fa-envelope"></i>
     
-    <script>
+            </div>
+            
+          </div>
+          <div id="barsb" class="barsbox">
+            <i class="fa-solid fa-bars"></i>  
+                    
+          </div>
+          <div id="barcontent" class="insidebars" >
+            <div id="review" class="item"> <div class="ibox"><i class="fa-solid fa-star"></i></div> <h5>Watch Review</h5> </div>
+            <div id="nhanvat" class="item"><div class="ibox"><i class="fa-solid fa-users-rays"></i></div> <h5>Character</h5></div>
+            <div id="trailer" class="item"><div class="ibox"><i class="fa-solid fa-film"></i></div> <h5>Trailer</h5> </div>
+          </div> 
+          
+           <img id="pic1" src="[removal.ai]_tmp-63ae8aa785093_C5EF5N.png" alt="">
+           <div id="leftbox" class="chichirobox1">
+            <div class="textbox">
+              <h3 class="year">2001</h3>
+            <h2>Spirited Away</h2>
+            </div>
+            <div class="button"><h5>Watch</h5></div>
+            
+          </div>
+          <div id="rightbox" class="chichirobox2">
+             <h4>Chihiro's growth into a capable individual is a core factor to the movement of Spirited Away's plot. During her adventure in the Spirit World, she matures from an easily scared girl with a childlike personality to match her age to a hard-working, responsible, and brave young girl who has learned to put her fears aside for those she cares for.</h4>
+            <img id="pic2" src="[removal.ai]_tmp-63affc625feea.png" alt="">
+           </div>
+          <canvas id="canvas" style="background: #111;"></canvas> 
+          
+            
+         </div>
+         </div>
+
+      </div>
+      
+      <script>
+        let searchbox = document.querySelector('#s');
+        let searchMain = document.querySelector('#sb');
+        let inputbox = document.querySelector('#ip');
+        searchbox.onclick = function()
+        {
+          searchMain.style.width = '320px';
+          x.style.opacity = '1';
+          x.style.animation ='totheright 1s ease 0s';
+          inputbox.style.opacity = '1';
+
+        }
+        let flashbox = document.querySelector('#flash');
+        let x = document.querySelector('#x');
+        x.onclick = function (e) {         
+              if(e.target === x)
+              {
+                searchMain.style.width = '50px';
+                x.style.opacity = '0';
+                inputbox.style.opacity = '0';
+
+              }   
+          }
+        
+        let linebox = document.querySelector('#linex')
+        let homebox = document.querySelector('#homeb')
+        let aboutbox = document.querySelector('#aboutb')
+        let servicebox = document.querySelector('#serviceb')
+        let designbox = document.querySelector('#designb')
+        let contactbox = document.querySelector('#contactb')
+        homebox.onclick = function(e)
+        {
+         if(e.target === homebox)
+         {
+          homebox.appendChild(linebox);
+          
+          linebox.style.animation = 'linekf 1s both 0s';
+         }
+         else
+         {
+          homebox.removeChild(linebox);
+         }
+        }
+        aboutbox.onclick = function(e)
+        {
+         if(e.target === aboutbox)
+         {
+          aboutbox.appendChild(linebox);
+          linebox.style.animation = 'linekf 1s both 0s';
+         }
+         else
+         {
+          aboutbox.removeChild(linebox);
+         }
+        }
+        servicebox.onclick = function(e)
+        {
+         if(e.target === servicebox)
+         {
+          servicebox.appendChild(linebox);
+          linebox.style.animation = 'linekf 1s both 0s';
+         }
+         else
+         {
+          servicebox.removeChild(linebox);
+         }
+        }
+        designbox.onclick = function(e)
+        {
+         if(e.target === designbox)
+         {
+          designbox.appendChild(linebox);
+          linebox.style.animation = 'linekf 1s both 0s';
+         }
+         else
+         {
+          designbox.removeChild(linebox);
+         }
+        }
+        contactbox.onclick = function(e)
+        {
+         if(e.target ===  contactbox)
+         {
+           contactbox.appendChild(linebox);
+          linebox.style.animation = 'linekf 1s both 0s';
+         }
+         else
+         {
+           contactbox.removeChild(linebox);
+         }
+        }
+        //rain
+         
         var canvas = document.getElementById('canvas');
         var context = canvas.getContext('2d');
         var W = window.innerWidth;
@@ -25,17 +191,76 @@
         canvas.height = H;
         var str = '';
         function draw(){
-            context.fillStyle = "black";
+            context.fillStyle = "#14273d";
             context.fillRect(0, 0, W, H);
-            context.fillStyle = "green";
-            for(var i = 0;i<100;i++)
+            context.fillStyle = "white";
+            for(var i = 0;i<200;i++)
             {
                 var index = Math.floor(Math.random()*str.length);
                 var char = str[index];
-                context.fillText('Error.This page was hacked',Math.random()*800,Math.random()*800)
+                context.fillText('.',Math.random()*1500,Math.random()*800)
             }
         }
-        setInterval(draw,150);
-    </script>
+        setInterval(draw,1000);
+        
+        //bars
+        let inthebars = document.querySelector('#barcontent');
+        let mainbars = document.querySelector('#barsb');
+        let i = 0;
+        mainbars.onclick = function()
+        {
+          i++;
+          if(i % 2 != 0)
+          {
+              inthebars.style.opacity ='0';
+              
+              inthebars.style.zIndex = "-1";
+              
+          }
+          else
+          {
+           inthebars.style.opacity ='1'; 
+           inthebars.style.zIndex = "5"; 
+          }
+        }
+       //slideNext
+       let pic01 = document.querySelector('#pic1');
+       let text01 = document.getElementById('text1');
+       let text02 = document.getElementById('text2');
+       let text03 = document.getElementById('text3');
+       let node01 = document.querySelector('#node1');
+       let node02 = document.querySelector('#node2');
+       let node03 = document.querySelector('#node3');
+       let chihiroleftbox  = document.querySelector('#leftbox');
+       let chihirorightbox = document.querySelector('#rightbox');
+       let chihirob = document.querySelector('#pic2');
+       
+       node1.onclick = function()
+       {
+          text01.innerText = 'Spirited Away';
+          pic01.style.animation = 'picanimationin 2s both 0s';
+          text01.style.animation = 'textanimationin 2s both 0s';
+          text02.style.animation = 'textanimationin 2s both 0s';
+        text03.style.animation = 'textanimationin 2s both 0s';
+        chihiroleftbox.style.animation = 'slideleftout 2s both 0s';
+        chihirorightbox.style.animation ='sliderightout 2s both 0s';
+          
+       }
+       
+       node2.onclick = function()
+       {
+         
+        text02.style.animation = 'textanimationout 2s both 0s';
+        text03.style.animation = 'textanimationout 2s both 0s';
+        pic01.style.animation= 'picanimationout 2s both 0s';
+        text01.style.animation = 'textanimationout 2s both 0s';
+        chihiroleftbox.style.animation = 'slideleft 2s both 0s';
+        chihirorightbox.style.animation ='slideright 2s both 0s';
+       }
+       // chihiro 
+       
+       
+    
+      </script>
 </body>
 </html>
